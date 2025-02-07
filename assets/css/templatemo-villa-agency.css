@@ -745,7 +745,7 @@ Banner Style
 }
 
 .main-banner .item-1 {
-  background-image: url(../images/Fash-Hub\ Couture1.png);
+  background-image: url(../images/Fashvid.png);
 }
 
 .main-banner .item-2 {
@@ -958,7 +958,7 @@ Video Style
 */
 
 .video {
-  background-image: url(../images/video-bg.jpg);
+  background-image: url(../images/vidbg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1375,7 +1375,7 @@ Page Header Style
 */
 
 .page-heading {
-  background-image: url(../images/page-heading-bg.jpg);
+  background-image: url(../images/vidbg.png);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
