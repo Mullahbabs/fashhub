@@ -839,8 +839,6 @@ Banner Style
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-
-
 /* 
 ---------------------------------------------
 Featured Style
@@ -959,7 +957,7 @@ Video Style
 */
 
 .video {
-  background-image: url(../images/vidbg.png);
+  background-image: url(../images/burgess-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1061,8 +1059,12 @@ Best Deal Style
 */
 
 .best-deal {
-  background-color: #fafafa;
-  padding: 100px 0px;
+  background-image: rgba(0, 0, 0, 0.5) url(../images/burgess-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  padding: 100px 0px 250px 0px;
+  position: relative;
 }
 
 .best-deal .tab-content img {
@@ -1113,7 +1115,7 @@ Best Deal Style
   border-bottom: 1px solid #eee;
   text-align: left;
   font-size: 15px;
-  color: #aaa;
+  color: #f35525;
   font-weight: 400;
 }
 
@@ -1125,7 +1127,7 @@ Best Deal Style
 
 .best-deal .info-table ul li span {
   font-size: 20px;
-  color: #1e1e1e;
+  color: #fff;
   font-weight: 700;
   float: right;
   display: inline-block;
@@ -1140,6 +1142,7 @@ Best Deal Style
   font-size: 17px;
   font-weight: 600;
   margin-bottom: 30px;
+  color: #f35525;
 }
 
 .best-deal .icon-button {
@@ -1826,4 +1829,67 @@ body {
   .contact-page .section-heading {
     margin-right: 100px;
   }
+}
+
+/* Carousel Container */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Carousel Track */
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Carousel Slide */
+.carousel-slide {
+  flex: 0 0 25%; /* Show 4 items per row */
+  box-sizing: border-box;
+  padding: 0 10px; /* Spacing between items */
+}
+
+/* Item Styling */
+.item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navigation Buttons */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+/* Hide scrollbar */
+.carousel-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }

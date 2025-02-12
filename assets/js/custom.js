@@ -122,5 +122,4 @@
 	});
     
 
-
 })(window.jQuery);

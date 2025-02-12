@@ -3446,3 +3446,95 @@
 	}
 
 })(window.Zepto || window.jQuery, window, document);
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const track = document.querySelector('.carousel-track');
+  const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+  const nextButton = document.querySelector('.carousel-button.next');
+  const prevButton = document.querySelector('.carousel-button.prev');
+
+  let currentIndex = 0;
+
+  // Function to move to a specific slide
+  const moveToSlide = (index) => {
+    const slideWidth = slides[0].clientWidth;
+    track.style.transform = `translateX(-${slideWidth * index}px)`;
+    currentIndex = index;
+  };
+
+  // Next Button
+  nextButton.addEventListener('click', () => {
+    if (currentIndex < slides.length - 3) {
+      moveToSlide(currentIndex + 1);
+    }
+  });
+
+  // Previous Button
+  prevButton.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      moveToSlide(currentIndex - 1);
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+	const track = document.querySelector('.carousel-track');
+	const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+	const nextButton = document.querySelector('.carousel-button.next');
+	const prevButton = document.querySelector('.carousel-button.prev');
+  
+	let currentIndex = 0;
+	let autoPlayInterval;
+  
+	// Function to move to a specific slide
+	const moveToSlide = (index) => {
+	  if (index < 0) {
+		index = slides.length - 4; // Loop to the end
+	  } else if (index > slides.length - 4) {
+		index = 0; // Loop to the beginning
+	  }
+  
+	  const slideWidth = slides[0].clientWidth;
+	  track.style.transform = `translateX(-${slideWidth * index}px)`;
+	  currentIndex = index;
+	};
+  
+	// Next Button
+	nextButton.addEventListener('click', () => {
+	  moveToSlide(currentIndex + 1);
+	  resetAutoPlay(); // Reset auto-play on manual navigation
+	});
+  
+	// Previous Button
+	prevButton.addEventListener('click', () => {
+	  moveToSlide(currentIndex - 1);
+	  resetAutoPlay(); // Reset auto-play on manual navigation
+	});
+  
+	// Auto-Play Functionality
+	const startAutoPlay = () => {
+	  autoPlayInterval = setInterval(() => {
+		moveToSlide(currentIndex + 1);
+	  }, 3000); // Change slide every 3 seconds
+	};
+  
+	// Reset Auto-Play
+	const resetAutoPlay = () => {
+	  clearInterval(autoPlayInterval);
+	  startAutoPlay();
+	};
+  
+	// Start Auto-Play on Load
+	startAutoPlay();
+  
+	// Pause Auto-Play on Hover
+	const carouselContainer = document.querySelector('.carousel-container');
+	carouselContainer.addEventListener('mouseenter', () => {
+	  clearInterval(autoPlayInterval);
+	});
+  
+	carouselContainer.addEventListener('mouseleave', () => {
+	  startAutoPlay();
+	});
+  });
