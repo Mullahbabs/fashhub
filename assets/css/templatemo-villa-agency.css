@@ -88,7 +88,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #1e1e1e;
+  color: #fff;
   margin-top: 0px;
   margin-bottom: 0px;
   font-weight: 700;
@@ -738,23 +738,25 @@ Banner Style
 
 .main-banner .item {
   background-position: center center;
-  justify-content: center;
+  justify-content: justify;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 220px 20% 320px 20%;
   margin-top: 0px;
+  
 }
 
 .main-banner .item-1 {
-  background-image: url(../images/fashviddd.png);
+  background-image: url(../images/tbg.jpg);
 }
 
 .main-banner .item-2 {
-  background-image: url(../images/Summer\ 2025bg.png);
+  background-image: url(../images/secbg.jpg);
 }
 
 .main-banner .item-3 {
-  background-image: url(../images/banner-03.jpg);
+  background-image: url(../images/3bg.jpg);
 }
 
 .main-banner .item span.category {
@@ -766,6 +768,7 @@ Banner Style
   padding: 6px 15px;
   display: inline-block;
   margin-bottom: 30px;
+  opacity: 0.8;
 }
 
 .main-banner .item span.category em {
@@ -1059,9 +1062,9 @@ Best Deal Style
 */
 
 .best-deal {
-  background-image: rgba(0, 0, 0, 0.5) url(../images/burgess-bg.jpg);
+  background-image:  url(../images/dealbg.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain ;
   background-position: center center;
   padding: 100px 0px 250px 0px;
   position: relative;
@@ -1106,6 +1109,7 @@ Best Deal Style
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   padding: 35px 30px;
+  overflow: hidden;
 }
 
 .best-deal .info-table ul li {
