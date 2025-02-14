@@ -319,7 +319,7 @@ Header Style
 .sub-header {
   background-color: #ffb94f;
   padding: 10px 0px;
-  border-bottom: 1px solid 
+  border-bottom: 1px solid #eee;
 }
 
 .sub-header ul li {
@@ -372,9 +372,9 @@ Header Style
 }
 
 .background-header {
-  background-color: #fff;
+  background-color: #04272b;
   height: 80px!important;
-  position: fixed;
+  position: fixed!important;
   top: 0!important;
   left: 0;
   right: 0;
@@ -387,7 +387,7 @@ Header Style
 
 .header-area {
   position: relative;
-  background-color: #ffb94f;
+  background-color: #04272b;
   height: 100px;
   z-index: 100;
   -webkit-transition: all .5s ease 0s;
@@ -413,7 +413,7 @@ Header Style
   line-height: 100px;
   font-size: 28px;
   text-transform: uppercase;
-  color: #04272b;
+  color: #ffb94f;
   font-weight: 600;
   letter-spacing: 2px;
   
@@ -455,7 +455,7 @@ Header Style
   height: 40px;
   line-height: 40px;
   text-transform: capitalize;
-  color: #1e1e1e;
+  color: #fff;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
@@ -706,7 +706,7 @@ Header Style
   .header-area .main-nav .nav {
     float: none;
     width: 100%;
-    display: none;
+    display: inline-block;
     -webkit-transition: all 0s ease 0s;
     -moz-transition: all 0s ease 0s;
     -o-transition: all 0s ease 0s;
@@ -739,7 +739,6 @@ Banner Style
 
 .main-banner .item {
   background-position: center center;
-  justify-content: justify;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.3);
@@ -749,15 +748,15 @@ Banner Style
 }
 
 .main-banner .item-1 {
-  background-image: url(../images/tbg.jpg);
+  background-image: url(../images/dwayne-joe-javYua7nXcU-unsplash.jpg);
 }
 
 .main-banner .item-2 {
-  background-image: url(../images/secbg.jpg);
+  background-image: url(../images/alesia-kazantceva-dhD_FiNkuzw-unsplash.jpg);
 }
 
 .main-banner .item-3 {
-  background-image: url(../images/3bg.jpg);
+  background-image: url(../images/toa-heftiba-KQ1n6HzSahY-unsplash.jpg);
 }
 
 .main-banner .item span.category {
@@ -769,7 +768,6 @@ Banner Style
   padding: 6px 15px;
   display: inline-block;
   margin-bottom: 30px;
-  opacity: 0.8;
 }
 
 .main-banner .item span.category em {
