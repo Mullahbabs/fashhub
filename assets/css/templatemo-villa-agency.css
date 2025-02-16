@@ -752,11 +752,11 @@ Banner Style
 }
 
 .main-banner .item-2 {
-  background-image: url(../images/alesia-kazantceva-dhD_FiNkuzw-unsplash.jpg);
+  background-image: url(../images/clembg.jpg);
 }
 
 .main-banner .item-3 {
-  background-image: url(../images/toa-heftiba-KQ1n6HzSahY-unsplash.jpg);
+  background-image: url(../images/clembg1.jpg);
 }
 
 .main-banner .item span.category {
@@ -1080,7 +1080,7 @@ Best Deal Style
   border-radius: 5px;
   height: 50px;
   line-height: 50px;
-  display: inline-block;
+  display: ;
   padding: 0px 25px;
   color: #fff;
 }
@@ -1857,7 +1857,7 @@ body {
 
 /* Item Styling */
 .item {
-  border: 1px solid #ddd;
+  border: 1px solid #04272b;
   padding: 15px;
   text-align: center;
 }
