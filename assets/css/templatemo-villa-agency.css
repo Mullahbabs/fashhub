@@ -151,7 +151,7 @@ body {
 }
 
 .section-heading h6 {
-  color: #ee626b;
+  color: #ffb94f;
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -1171,7 +1171,7 @@ Properties Style
 }
 
 .properties .item span.category {
-  background-color: #fbd9cf;
+  background-color: #ffb94f;
   font-weight: 500;
   border-radius: 5px;
   font-size: 14px;
@@ -1896,4 +1896,65 @@ body {
 
 .carousel-container::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
+}
+
+.testimonials {
+  padding: 60px 0;
+  background-color: #04272b;
+}
+
+.section-heading {
+  margin-bottom: 30px;
+}
+
+.section-heading h6 {
+  font-size: 16px;
+  color: #ffb94f;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-heading h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.swiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-item {
+  background: #04272b;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  max-width: 350px;
+}
+
+.testimonial-item .client-img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonial-item h4 {
+  font-size: 18px;
+  color: #ffb94f;
+  margin-bottom: 10px;
+}
+
+.testimonial-item p {
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.5;
 }

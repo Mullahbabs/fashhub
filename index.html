@@ -428,17 +428,16 @@ https://templatemo.com/tm-591-villa-agency
   </div>
 </div>
 
-
 <div class="properties section">
   <div class="container">
     <div class="row">
       <div class="col-lg-4 offset-lg-4">
         <div class="section-heading text-center">
-          <h6>| Top Three</h6>
-          <p class="h5">Designers Of The Month By Outfit</p>
+          <h6>| Top Three</h6><br>
+          <h5>Designers Of The Month By Outfit</h5>
         </div>
     </div>
-    <div class="section properties">
+  </div>
     <div class="container">
       <ul class="properties-filter">
         <li>
@@ -574,7 +573,7 @@ https://templatemo.com/tm-591-villa-agency
         <div class="col-lg-4 offset-lg-4">
           <div class="section-heading text-center">
             <h6>| Recent Items </h6>
-            <h2 style="max-width: 800px;">Glance through Our Most Recent Collection</h2>
+            <h5 style="max-width: 800px;">Glance through Our Most Recent Collection</h5>
           </div>
         </div>
       </div>
@@ -598,7 +597,7 @@ https://templatemo.com/tm-591-villa-agency
             <div class="item">
               <a href="property-details.html"><img src="assets/images/man.jpg" alt=""></a>
               <span class="category">Luxury</span>
-              <h6>$1.180.000</h6>
+              <h6> $1.180.000</h6>
               <h4></h4>
               <div class="main-button">
                 <a href="property-details.html">View Collection</a>
@@ -646,6 +645,75 @@ https://templatemo.com/tm-591-villa-agency
       </div>
     </div>
   </div>
+
+  
+<div class="testimonials section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 offset-lg-4">
+        <div class="section-heading text-center">
+          <h6>| Fashub Weekly!!!</h6>
+          <h2>Beauty Tips &amp; Tricks</h2>
+        </div>
+      </div>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="client-img">
+              <img src="assets/images/tips.jpg" alt="Client 1">
+            </div>
+            <h4>Outfit</h4>
+            <p>"The experience was amazing! The team delivered beyond expectations, and I love the outfit I got."</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="client-img">
+              <img src="assets/images/tips.jpg" alt="Client 2">
+            </div>
+            <h4>Accessories</h4>
+            <p>"The quality of service and products is unmatched. Highly recommend for anyone seeking luxury fashion."</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="client-img">
+              <img src="assets/images/tips.jpg" alt="Client 3">
+            </div>
+            <h4>Make-Up</h4>
+            <p>"Excellent craftsmanship and attention to detail. I received so many compliments on my custom outfit."</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="client-img">
+              <img src="assets/images/tips.jpg" alt="Client 3">
+            </div>
+            <h4>Scent</h4>
+            <p>"Excellent craftsmanship and attention to detail. I received so many compliments on my custom outfit."</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="client-img">
+              <img src="assets/images/tips.jpg" alt="Client 3">
+            </div>
+            <h4>Aura</h4>
+            <p>"Excellent craftsmanship and attention to detail. I received so many compliments on my custom outfit."</p>
+          </div>
+        </div>
+        <!-- Add more testimonial slides as needed -->
+      </div>
+      <!-- Navigation Arrows -->
+      <br>
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
+
   
 
   <div class="contact section">
@@ -740,6 +808,35 @@ https://templatemo.com/tm-591-villa-agency
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      loop: true,
+    },
+    breakpoints: {
+      1024: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      480: {
+        slidesPerView: 1,
+      },
+    },
+  });
+</script>
+
 
   
 
