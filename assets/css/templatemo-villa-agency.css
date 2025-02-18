@@ -1903,7 +1903,7 @@ body {
 .testimonials {
   padding: 60px 0;
   background-color: #ffb94f;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .section-heading {
