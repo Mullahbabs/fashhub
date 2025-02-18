@@ -1943,7 +1943,7 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 20px;
-  max-width: 350px;
+  max-width: 90%;
   margin: 0 auto; /* Center items on smaller screens */
 }
 
@@ -1971,8 +1971,8 @@ body {
 /* Small screens (phones, <768px) */
 @media (max-width: 767px) {
   .testimonial-item {
-    padding: 15px;
-    max-width: 300px; /* Reduce max width for smaller screens */
+    padding: 40px 15px;
+    max-width: 100%; /* Reduce max width for smaller screens */
   }
 
   .testimonial-item h4 {
@@ -1999,4 +1999,3 @@ body {
     font-size: 14px;
   }
 }
-
