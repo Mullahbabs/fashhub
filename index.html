@@ -128,8 +128,8 @@ https://templatemo.com/tm-591-villa-agency
         </div>
         <div class="col-lg-5">
           <div class="section-heading">
-            <h6>| Featured Designer</h6>
-            <h2>Exclusive Collection by...</h2>
+            <h6 style="color: #ffb94f;"> | Featured Designer</h6>
+            <h2 class="text-white">Exclusive Collection by...</h2>
           </div>
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
@@ -557,6 +557,60 @@ https://templatemo.com/tm-591-villa-agency
     </div>
   </div>
   
+  <div class="discount-section">
+    <div class="container">
+      <div class="row">
+        <!-- Left-Aligned Click-to-Reveal Section -->
+        <div class="col-lg-6 left-section">
+          <div class="topics">
+            <h3>Discounted Items of the Week</h3>
+            <button class="topic-button" data-target="topic1">Men's Fashion</button>
+            <button class="topic-button" data-target="topic2">Women's Fashion</button>
+            <button class="topic-button" data-target="topic3">Accessories</button>
+          </div>
+          <div class="content">
+            <div id="topic1" class="topic-content">Discover the latest discounts on men’s fashion. Up to 50% off on top brands!</div>
+            <div id="topic2" class="topic-content hidden">Save big on women’s fashion this week with deals you won’t want to miss.</div>
+            <div id="topic3" class="topic-content hidden">Get the best prices on stylish accessories for every occasion!</div>
+          </div>
+        </div>
+  
+        <!-- Right-Aligned Carousel -->
+        <div class="col-lg-6 right-carousel">
+          <div class="swiper discountSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item">
+                  <img src="assets/images/weeklydeal.jpg" alt="Discount 1">
+                  <h4>Product 1</h4>
+                  <p>Now only $49.99</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item">
+                  <img src="assets/images/weeklydeal.jpg" alt="Discount 2">
+                  <h4>Product 2</h4>
+                  <p>Now only $29.99</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item">
+                  <img src="assets/images/weeklydeal.jpg" alt="Discount 3">
+                  <h4>Product 3</h4>
+                  <p>Now only $39.99</p>
+                </div>
+              </div>
+            </div>
+            <!-- Swiper Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
   <div class="properties section">
     <div class="container">
       <div class="row">
@@ -872,6 +926,42 @@ https://templatemo.com/tm-591-villa-agency
   });
   </script>
 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  // Swiper Carousel with unique class name
+  var discountSwiper = new Swiper(".discountSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 
+  // Click-to-Reveal Functionality
+  const buttons = document.querySelectorAll('.topic-button');
+  const contents = document.querySelectorAll('.topic-content');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Remove active class from all buttons
+      buttons.forEach(btn => btn.classList.remove('active'));
+      // Hide all content
+      contents.forEach(content => content.classList.add('hidden'));
+      // Activate the selected button
+      button.classList.add('active');
+      // Show the corresponding content
+      const target = document.getElementById(button.dataset.target);
+      target.classList.remove('hidden');
+    });
+  });
+</script>
+
+  
   </body>
 </html>
