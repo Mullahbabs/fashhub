@@ -1165,6 +1165,7 @@ Properties Style
   border-radius: 10px;
   padding: 30px;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .properties .item img {
@@ -1347,35 +1348,74 @@ Footer Style
 --------------------------------------------- 
 */
 
-footer.footer-no-gap {
-  margin-top: 0px;
-}
-
-footer {
-  margin-top: 150px;
-  background-color: #1e1e1e;
-  min-height: 100px;
-}
-
-footer p {
-  text-align: center;
-  line-height: 100px;
+.footer {
+  background-color: #04272b;
   color: #fff;
-  font-size: 16px;
-  font-weight: 400;
+  padding: 40px 0;
 }
 
-footer p a {
-  color: #fff;
-  transition: all .3s;
-  position: relative;
-  z-index: 3;
+.footer h4 {
+  font-size: 18px;
+  color: #ffb94f;
+  margin-bottom: 15px;
 }
 
-footer p a:hover {
-  opacity: 0.75;
+.footer p,
+.footer ul li {
+  font-size: 14px;
+  color: #ddd;
+  margin-bottom: 10px;
 }
 
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer ul li img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer form input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+.footer form button {
+  background-color: #ffb94f;
+  border: none;
+  color: #04272b;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.footer-bottom a {
+  color: #ffb94f;
+  text-decoration: none;
+}
 
 /* 
 ---------------------------------------------
