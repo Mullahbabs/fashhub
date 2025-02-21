@@ -320,6 +320,7 @@ Header Style
   background-color: #ffb94f;
   padding: 10px 0px;
   border-bottom: 1px solid #eee;
+  display: block;
 }
 
 .sub-header ul li {
