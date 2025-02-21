@@ -404,7 +404,7 @@ Header Style
 }
 
 .background-header {
-  background-color: #04272b;
+  background-color: transparent;
   height: 80px;
   position: fixed!important;
   top: 0;
