@@ -922,13 +922,14 @@ Featured Style
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   padding: 35px 30px;
+  border-bottom: #ffb94f;
 }
 
 .featured .info-table ul li {
   display: block;
   margin-bottom: 35px;
   padding-bottom: 35px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #ffb94f;
 }
 
 .featured .info-table ul li:last-child {
