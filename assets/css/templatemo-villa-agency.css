@@ -421,7 +421,7 @@ Header Style
   position: relative;
   background-color: #fff;
   height: 70px;
-  z-index: 100;
+  z-index: 10;
   -webkit-transition: all .5s ease 0s;
   -moz-transition: all .5s ease 0s;
   -o-transition: all .5s ease 0s;
