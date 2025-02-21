@@ -368,12 +368,12 @@ Header Style
 .sub-header ul.info li i {
   font-size: 20px;
   color: #fff;
-  margin-right: 8px;
+  margin-right: 6px;
 }
 
 .background-header {
   background-color: #04272b;
-  height: 80px!important;
+  height: 80px;
   position: fixed!important;
   top: 0!important;
   left: 0;
@@ -387,8 +387,8 @@ Header Style
 
 .header-area {
   position: relative;
-  background-color: #04272b;
-  height: 100px;
+  background-color: #fff;
+  height: 70px;
   z-index: 100;
   -webkit-transition: all .5s ease 0s;
   -moz-transition: all .5s ease 0s;
@@ -411,10 +411,10 @@ Header Style
 
 .header-area .main-nav .logo h1 {
   line-height: 100px;
-  font-size: 28px;
+  font-size: 18px;
   text-transform: uppercase;
-  color: #ffb94f;
-  font-weight: 600;
+  color: #04272b;
+  font-weight: 800;
   letter-spacing: 2px;
   
 }
@@ -455,7 +455,7 @@ Header Style
   height: 40px;
   line-height: 40px;
   text-transform: capitalize;
-  color: #fff;
+  color: #04272b;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
