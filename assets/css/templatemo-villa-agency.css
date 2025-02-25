@@ -1093,7 +1093,7 @@ Best Deal Style
 */
 
 .best-deal {
-  background-image:  url(../images/Fruche_Lagos_Fashion_Week22.png);
+  background-color: #fff;
   background-repeat: no-repeat;
   background-size: contain ;
   background-position: center center;
@@ -1164,7 +1164,6 @@ Best Deal Style
   font-size: 20px;
   color: #fff;
   font-weight: 700;
-  float: right;
   display: inline-block;
 }
 
@@ -2084,7 +2083,7 @@ body {
 
 .left-section h3 {
   margin-bottom: 20px;
-  color: #333;
+  color: #04272b;
   font-size: 24px;
 }
 
@@ -2116,7 +2115,7 @@ body {
 .topic-content {
   display: none;
   font-size: 16px;
-  color: #555;
+  color: #04272b;
 }
 
 .topic-content:not(.hidden) {
@@ -2245,7 +2244,7 @@ body {
   max-width: 100%;
   height: 0;
   padding-top: 56.25%; /* Maintain 16:9 Aspect Ratio */
-  background: url(../images/weeklydeal.jpg); /* Default background color */
+  background: url(../images/M_R_438_MOB.jpg); /* Default background color */
   border-radius: 10px;
   overflow: hidden;
 }
